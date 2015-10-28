@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_pfs_restful_domain_FakturItem" items="${fakturitems}" z="M7HbbrrVXBJyqtssMWusCTFsJYw=">
+        <table:table data="${fakturitems}" id="l_com_pfs_restful_domain_FakturItem" path="/fakturitems" z="Xm27g8IH29R0PFb+rWzZsBKmOyM=">
+            <table:column id="c_com_pfs_restful_domain_FakturItem_merchandise" property="merchandise" z="6gFZqntS7N90XKfXD3fhYefIhl0="/>
+            <table:column id="c_com_pfs_restful_domain_FakturItem_qty" property="qty" z="CtBWkuRZTmj0WC326eC6OHUfTL0="/>
+            <table:column id="c_com_pfs_restful_domain_FakturItem_faktur" property="faktur" z="w7Cv1OuMUOGJAV6BxhSBeD+0XVw="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,36 @@
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-10-27 15:38:58
+project --topLevelPackage com.pfs.restful
+jpa setup --provider HIBERNATE --database MSSQL 
+entity jpa --class ~.domain.Merchandise --testAutomatically 
+field string --fieldName name --notNull --sizeMin  2
+field number --fieldName price --notNull no --type double
+entity jpa --class ~.domain.FakturItem --testAutomatically 
+field number --fieldName qty --notNull yes --type int
+entity jpa --class ~.domain.Faktur --testAutomatically 
+field date --fieldName createdate --notNull no --type java.util.Date
+field set --fieldName items --type ~.domain.FakturItem
+// [failed] entity jpa --class ~.domain.User --testAutomatically 
+// [failed] field string --fieldName username --notNull 1 --sizeMin 5
+entity jpa --class ~.domain.PfsUser --testAutomatically 
+field string --fieldName username --notNull 1 --sizeMin 5
+field string --fieldName password --notNull 1 --sizeMin 6
+entity jpa --class ~.domain.Faktur --testAutomatically 
+field reference --fieldName createdBy --type ~.domain.PfsUser
+entity jpa --class ~.domain.FakturItem --testAutomatically 
+field reference --fieldName merchandise --type ~.domain.Merchandise
+// [failed] perform tests
+// [failed] perform tests
+// [failed] perform tests
+// [failed] perform eclipse
+// [failed] perform tests
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-10-27 16:21:32
+focus --class ~.domain.Faktur
+field date --fieldName createDate --type java.util.Date
+field set --fieldName items --type ~.domain.FakturItem
+focus --class ~.domain.FakturItem
+field number --fieldName qty --type int --notNull  yes
+field reference --fieldName faktur --type ~.domain.Faktur
+perform eclipse
+perform tests
+web mvc setup
+web mvc all --package ~.web

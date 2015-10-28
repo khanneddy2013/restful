@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_pfsuser" z="BjwipgXx4AskD9JDPOhyfTmmGHg=">
+            <menu:item id="i_pfsuser_new" messageCode="global_menu_new" url="/pfsusers?form" z="L8KdvBo8tv8Gu22CtQPuREsor+4="/>
+            <menu:item id="i_pfsuser_list" messageCode="global_menu_list" url="/pfsusers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="x2e1rZPW9130p01VKef7bx8w9jE="/>
+        </menu:category>
+        <menu:category id="c_fakturitem" z="duV4RK+15x9aLmSKJKE6E8Go4Kc=">
+            <menu:item id="i_fakturitem_new" messageCode="global_menu_new" url="/fakturitems?form" z="1JFobPysVTukmDtQ1CT+sdGfYuE="/>
+            <menu:item id="i_fakturitem_list" messageCode="global_menu_list" url="/fakturitems?page=1&amp;size=${empty param.size ? 10 : param.size}" z="u/0JaDCSC+Kpvoa/BBPTqNV6Vtw="/>
+        </menu:category>
+        <menu:category id="c_faktur" z="EFGHtLsErqKFuq7Ea6eo9HEmEQY=">
+            <menu:item id="i_faktur_new" messageCode="global_menu_new" url="/fakturs?form" z="uxZxopzianPY1HA4EIqxANnWm9E="/>
+            <menu:item id="i_faktur_list" messageCode="global_menu_list" url="/fakturs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="jwpsz7+q93H+JgGGXhg5HAqEPMM="/>
+        </menu:category>
+        <menu:category id="c_merchandise" z="WxuPMRN03pvvUOp2aaZ98o1R5L4=">
+            <menu:item id="i_merchandise_new" messageCode="global_menu_new" url="/merchandises?form" z="zGw3oRD5xfAmyicNbO0Md1UMnzA="/>
+            <menu:item id="i_merchandise_list" messageCode="global_menu_list" url="/merchandises?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ryiZxFERqasYD6fOWhnzOpMSIPE="/>
+        </menu:category>
+    </menu:menu>
+</div>

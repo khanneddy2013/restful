@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_pfs_restful_domain_FakturItem" object="${fakturitem}" path="/fakturitems" z="kCrT9y4fB4DPbBj1KEQg7M2SuWI=">
+        <field:display field="merchandise" id="s_com_pfs_restful_domain_FakturItem_merchandise" object="${fakturitem}" z="sjhsdFF1mH43ZEP0fB/Gi/uk4aY="/>
+        <field:display field="qty" id="s_com_pfs_restful_domain_FakturItem_qty" object="${fakturitem}" z="BE6XjgGavnLXUrnzZJUag3+dEaE="/>
+        <field:display field="faktur" id="s_com_pfs_restful_domain_FakturItem_faktur" object="${fakturitem}" z="R6x4XxXzV3p8bj3MO2hrFCwvT/o="/>
+    </page:show>
+</div>

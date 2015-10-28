@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_pfs_restful_domain_FakturItem" modelAttribute="fakturItem" path="/fakturitems" versionField="Version" z="LGNGKtsJFjw3wQqIkfOMhtSJotU=">
+        <field:select field="merchandise" id="c_com_pfs_restful_domain_FakturItem_merchandise" itemValue="id" items="${merchandises}" path="/merchandises" z="g6J1IWf6aS7i8IUq9W2PAjWp0i0="/>
+        <field:input field="qty" id="c_com_pfs_restful_domain_FakturItem_qty" required="true" z="UMZv/5dppRBFHquhTq2N2ABmK9Y="/>
+        <field:select field="faktur" id="c_com_pfs_restful_domain_FakturItem_faktur" itemValue="id" items="${fakturs}" path="/fakturs" z="n5UUBf+4anLnC1FAcB/Iq2igj+o="/>
+    </form:update>
+</div>
